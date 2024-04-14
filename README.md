@@ -29,10 +29,19 @@ bla bla bla
 
 # Сервис
 
-*Репозиторий с фронтентом* - https://github.com/anyhhope/npf-front
+_Репозиторий с фронтентом_ - https://github.com/anyhhope/npf-front
 
-референс на рабочий прототип
+![alt text](image.png)
 
-стек технологий
+![alt text](image-1.png)
 
-как запустить
+Cтек технологий:
+Backend: Python, FastAPI
+Frontend: React
+
+Как запустить Backend:
+cd backend
+docker compose up --build -d
+docker cp ./migrations backend-db-1:./migrations
+docker exec -it backend-db-1 bash
+psql -U pguser -d dev -a -f ./migrations/skript.sql

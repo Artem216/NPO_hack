@@ -12,7 +12,7 @@ class Config(BaseSettings):
     postgres_password: str ="pgpassword"
     postgres_host: str = "localhost"
     postgres_db: str = "dev"
-    postgres_port: int = 5433
+    postgres_port: int = 5432
     @property
     def dsn(self) -> str:
         return f"postgres://{self.postgres_user}:{self.postgres_password}@{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
