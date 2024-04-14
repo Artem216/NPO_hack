@@ -32,20 +32,23 @@ blablabla все исследования
 
 # Сервис
 
-_Репозиторий с фронтентом_ - https://github.com/anyhhope/npf-front
-
 ![alt text](image.png)
 
 ![alt text](image-1.png)
 
 Cтек технологий:
 Backend: Python, FastAPI
-Frontend: React
+Frontend: React, SnadCN
 
 Как запустить Backend:
 
-cd backend
-docker compose up --build -d
-docker cp ./migrations backend-db-1:./migrations
-docker exec -it backend-db-1 bash
+cd backend  
+docker compose up --build -d  
+docker cp ./migrations backend-db-1:./migrations  
+docker exec -it backend-db-1 bash  
 psql -U pguser -d dev -a -f ./migrations/skript.sql
+
+Как запустить Frontend:  
+cd npf_frontend  
+npm install  
+npm run dev
