@@ -24,8 +24,11 @@ blablabla все исследования
 
 # Ml модель
 
-bla bla bla
-ссылка на обучение optional(обернуть модель)
+[Подготовка тестового датасета для предиктов](<./ml/test-dataset(1).ipynb>)
+
+[Предобработка и анализ тестовых данных](<./ml/data-preparation-hack-part-2%20(2).ipynb>)
+
+[Получение весов ансабля моделей катбустов без эмбеддингов](./ml/ensembling-without-embeddings.ipynb)
 
 # Сервис
 
@@ -40,6 +43,7 @@ Backend: Python, FastAPI
 Frontend: React
 
 Как запустить Backend:
+
 cd backend
 docker compose up --build -d
 docker cp ./migrations backend-db-1:./migrations
