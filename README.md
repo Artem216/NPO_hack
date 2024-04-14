@@ -41,14 +41,17 @@ Backend: Python, FastAPI
 Frontend: React, SnadCN
 
 Как запустить Backend:
-
+```
 cd backend  
 docker compose up --build -d  
 docker cp ./migrations backend-db-1:./migrations  
 docker exec -it backend-db-1 bash  
 psql -U pguser -d dev -a -f ./migrations/skript.sql
+```
 
 Как запустить Frontend:  
+```
 cd npf_frontend  
 npm install  
 npm run dev
+```
